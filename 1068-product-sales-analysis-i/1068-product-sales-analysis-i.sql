@@ -1,0 +1,4 @@
+# Write your MySQL query statement below
+SELECT product_name,YEAR,PRICE
+FROM SALES,PRODUCT
+WHERE SALES.PRODUCT_ID=PRODUCT.PRODUCT_ID
