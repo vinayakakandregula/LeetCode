@@ -4,7 +4,7 @@ import java.util.Map;
 class Solution {
     public long countBadPairs(int[] nums) {
         long n = nums.length;
-        long totalPairs = n * (n - 1) / 2; // Total number of pairs
+        long totalPairs = n * (n - 1) / 2; 
         Map<Integer, Integer> freqMap = new HashMap<>();
         long goodPairs = 0;
 
