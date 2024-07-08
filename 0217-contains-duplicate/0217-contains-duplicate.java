@@ -4,13 +4,10 @@ class Solution {
 		for (int i = 0; i < nums.length; i++) {
 			if(!(hs.contains(nums[i]))) {
 				hs.add(nums[i]);
-			}
+			} else{
+                return true;
+            }
 		}
-		if(nums.length == hs.size()) {
-            return false;
-		} else {
-            return true;
-		}
-
+        return false;
     }
 }
