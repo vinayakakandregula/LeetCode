@@ -12,9 +12,9 @@ class Solution {
 				}
 			}
 			if(count==1) {
-                res=  nums[i];
+                return  nums[i];
 			}
         }
-        return res;
+        return 0;
     }
 }
