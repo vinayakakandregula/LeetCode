@@ -3,16 +3,13 @@ class Solution {
         if (words == null || words.length == 0) {
             return 0;
         }
-
         int n = words.length;
         int[] masks = new int[n];
         int[] lens = new int[n];
-
         for (int i = 0; i < n; i++) {
             masks[i] = createBitmask(words[i]);
             lens[i] = words[i].length();
         }
-
         int res = 0;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
@@ -34,23 +31,7 @@ class Solution {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Time Limit Exceeded at last testcase
 
 // class Solution {
 //     public int maxProduct(String[] str) {
